@@ -19,7 +19,7 @@ class Student < ActiveRecord::Base
    
    Student.all.each do |nom|
      if nom.name.downcase.include?(sname)
-       @students << nom 
+       @students << nom
      end
    end
    @students
